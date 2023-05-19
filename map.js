@@ -5,9 +5,19 @@
  */
 
 // Using a for loop
+let nums = [1, 2, 3, 4, 5];
+let results = [];
+
+for (let num of nums) {
+  results.push(num * 2);
+}
+
+console.log(results);
 
 
 // Using map()
+let results2 = nums.map(num => num * 2);
+console.log(results2);
 
 
 // Simplified w/ map()
@@ -37,3 +47,6 @@ const students = [
     skill: 'CSS'
   },
 ];
+
+let results3 = students.map(student => [student.name, student.id]);
+console.log(results3);
